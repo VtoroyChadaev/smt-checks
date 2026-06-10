@@ -27,7 +27,7 @@ It' s shown using cvc5 solver
 
 ### TwobyteADD
 
-There must be constraints in TwoByteAdd scheme, ensuring that all values are single bytes, but there aren't.
+There must be constraints in TwoByteAdd scheme, ensuring that all values are single bytes, but there aren't for `add` and `carry`.
 
 So it's possible to cheat program restrictions. SMT solver is expected to find such values
 
