@@ -18,17 +18,18 @@
 
 ### CyclicExample
 
-```text
+
 In PIL, constraints must be satisfied in every row transition, including last to first.
+
 In CyclicExample it is handled using SEL polynomial. Without it, this scheme would be over-constrained.
+
 It' s shown using cvc5 solver
-```
 
 ### TwobyteADD
 
-```text
-There must be constraints in TwoByteAdd scheme, ensuring that all values are single bytes, but there aren't. So it's possible to cheat program restrictions. SMT solver is expected to find such values
-```
+There must be constraints in TwoByteAdd scheme, ensuring that all values are single bytes, but there aren't.
+
+So it's possible to cheat program restrictions. SMT solver is expected to find such values
 
 ## Usage examples:
 you need cvc5 system-wide
