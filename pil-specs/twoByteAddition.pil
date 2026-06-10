@@ -1,0 +1,15 @@
+include "config.pil";
+
+namespace twoByteAddition(%N);
+
+constant %RANK = 2 ** 8;
+
+pol constant BYTE_A, BYTE_B, BYTE_PREVCARRY, BYTE_CARRY, BYTE_ADD;
+pol constant RESET;
+
+pol commit a, b, Carry, prevCarry, add;
+
+prevCarry' = Carry;
+a + b + (1 - RESET) * prevCarry = %RANK * Carry + add;
+
+{a , b , (1 - RESET ) * prevCarry , carry , add } in { BYTE_A , BYTE_B , BYTE_PREVCARRY , BYTE_CARRY , BYTE_ADD };

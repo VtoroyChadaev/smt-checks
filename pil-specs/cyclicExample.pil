@@ -1,0 +1,14 @@
+include "configCyclic.pil";
+
+namespace cyclicExample(%N);
+
+// SEL = (1, 1, ... 1, 0)
+pol constant SEL;
+
+pol commit a;
+pol commit b;
+
+pol carry = (a - 1) * a;
+
+carry * (a + 1) = 0;
+b' = SEL * (a + b) + (1 - SEL);
