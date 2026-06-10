@@ -1,4 +1,4 @@
-# SMT experiments based on examples from the PIL doc
+# SMT checks based on examples from the PIL doc
 
 ## Implemented checks
   - cyclic-missing-selector
