@@ -19,7 +19,9 @@
 ### CyclicExample
 
 ```text
-In PIL, constraints must be satisfied in every row transition, including last to first. In CyclicExample it is handled using SEL polynomial. Without it, this scheme would be over-constrained. It' s shown using cvc5 solver
+In PIL, constraints must be satisfied in every row transition, including last to first.
+In CyclicExample it is handled using SEL polynomial. Without it, this scheme would be over-constrained.
+It' s shown using cvc5 solver
 ```
 
 ### TwobyteADD
