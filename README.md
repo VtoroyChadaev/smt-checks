@@ -15,11 +15,18 @@
      Encodes the TwoByteAdd scheme with proper range constraints; expected to return unsat (could return uknown if the scheme was large enough)
 
 ## Problems with specifications
+
 ### CyclicExample
-    In PIL, constraints must be satisfied in every row transition, including last to first. In CyclicExample it is handled using SEL polynomial. Without it, this scheme would be over-constrained. It' s shown using cvc5 solver
+
+```text
+In PIL, constraints must be satisfied in every row transition, including last to first. In CyclicExample it is handled using SEL polynomial. Without it, this scheme would be over-constrained. It' s shown using cvc5 solver
+```
 
 ### TwobyteADD
-    There must be constraints in TwoByteAdd scheme, ensuring that all values are single bytes, but there aren't. So it's possible to cheat program restrictions. SMT solver is expected to find such values
+
+```text
+There must be constraints in TwoByteAdd scheme, ensuring that all values are single bytes, but there aren't. So it's possible to cheat program restrictions. SMT solver is expected to find such values
+```
 
 ## Usage examples:
 you need cvc5 system-wide
